@@ -9,17 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let insurancePolicy = InsurancePolicy()
+        insurancePolicy.policyType = PolicyJeevanAnand()
+        let premiumOne = insurancePolicy.calculatePremiumForAmount(10000)
+        print("JeevanAnand Policy premium is:\(premiumOne)")
+        
+        insurancePolicy.policyType = PolicySimplySave()
+        let premiumTwo = insurancePolicy.calculatePremiumForAmount(10000)
+        print("Simply save Policy premium is:\(premiumTwo)")
+        
+        insurancePolicy.policyType = PolicyXyz()
+        let premiumThree = insurancePolicy.calculatePremiumForAmount(10000)
+        print("Policy xyz premium is:\(premiumThree)")
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

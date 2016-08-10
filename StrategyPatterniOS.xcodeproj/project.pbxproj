@@ -12,6 +12,11 @@
 		86D283181D5AD25000FB6399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D283161D5AD25000FB6399 /* Main.storyboard */; };
 		86D2831A1D5AD25000FB6399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86D283191D5AD25000FB6399 /* Assets.xcassets */; };
 		86D2831D1D5AD25000FB6399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D2831B1D5AD25000FB6399 /* LaunchScreen.storyboard */; };
+		86D283281D5AD2F000FB6399 /* PolicyPremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D283271D5AD2F000FB6399 /* PolicyPremium.swift */; };
+		86D2832A1D5AD35700FB6399 /* PolicyJeevanAnand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D283291D5AD35700FB6399 /* PolicyJeevanAnand.swift */; };
+		86D2832C1D5AD3B000FB6399 /* PolicySimplySave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D2832B1D5AD3B000FB6399 /* PolicySimplySave.swift */; };
+		86D2832E1D5AD4F200FB6399 /* InsurancePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D2832D1D5AD4F200FB6399 /* InsurancePolicy.swift */; };
+		86D283301D5AF7A500FB6399 /* PolicyXyz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D2832F1D5AF7A500FB6399 /* PolicyXyz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		86D283191D5AD25000FB6399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86D2831C1D5AD25000FB6399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86D2831E1D5AD25000FB6399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86D283271D5AD2F000FB6399 /* PolicyPremium.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyPremium.swift; sourceTree = "<group>"; };
+		86D283291D5AD35700FB6399 /* PolicyJeevanAnand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyJeevanAnand.swift; sourceTree = "<group>"; };
+		86D2832B1D5AD3B000FB6399 /* PolicySimplySave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicySimplySave.swift; sourceTree = "<group>"; };
+		86D2832D1D5AD4F200FB6399 /* InsurancePolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsurancePolicy.swift; sourceTree = "<group>"; };
+		86D2832F1D5AF7A500FB6399 /* PolicyXyz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyXyz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 		86D283111D5AD25000FB6399 /* StrategyPatterniOS */ = {
 			isa = PBXGroup;
 			children = (
+				86D283261D5AD29F00FB6399 /* Strategies */,
 				86D283121D5AD25000FB6399 /* AppDelegate.swift */,
 				86D283141D5AD25000FB6399 /* ViewController.swift */,
 				86D283161D5AD25000FB6399 /* Main.storyboard */,
@@ -62,6 +73,18 @@
 				86D2831E1D5AD25000FB6399 /* Info.plist */,
 			);
 			path = StrategyPatterniOS;
+			sourceTree = "<group>";
+		};
+		86D283261D5AD29F00FB6399 /* Strategies */ = {
+			isa = PBXGroup;
+			children = (
+				86D283271D5AD2F000FB6399 /* PolicyPremium.swift */,
+				86D283291D5AD35700FB6399 /* PolicyJeevanAnand.swift */,
+				86D2832B1D5AD3B000FB6399 /* PolicySimplySave.swift */,
+				86D2832D1D5AD4F200FB6399 /* InsurancePolicy.swift */,
+				86D2832F1D5AF7A500FB6399 /* PolicyXyz.swift */,
+			);
+			path = Strategies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				86D283151D5AD25000FB6399 /* ViewController.swift in Sources */,
+				86D2832C1D5AD3B000FB6399 /* PolicySimplySave.swift in Sources */,
+				86D2832A1D5AD35700FB6399 /* PolicyJeevanAnand.swift in Sources */,
+				86D283281D5AD2F000FB6399 /* PolicyPremium.swift in Sources */,
+				86D2832E1D5AD4F200FB6399 /* InsurancePolicy.swift in Sources */,
+				86D283301D5AF7A500FB6399 /* PolicyXyz.swift in Sources */,
 				86D283131D5AD25000FB6399 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
