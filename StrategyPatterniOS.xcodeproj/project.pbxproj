@@ -15,7 +15,7 @@
 		86D283281D5AD2F000FB6399 /* PolicyPremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D283271D5AD2F000FB6399 /* PolicyPremium.swift */; };
 		86D2832A1D5AD35700FB6399 /* PolicyJeevanAnand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D283291D5AD35700FB6399 /* PolicyJeevanAnand.swift */; };
 		86D2832C1D5AD3B000FB6399 /* PolicySimplySave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D2832B1D5AD3B000FB6399 /* PolicySimplySave.swift */; };
-		86D2832E1D5AD4F200FB6399 /* InsurancePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D2832D1D5AD4F200FB6399 /* InsurancePolicy.swift */; };
+		86D2832E1D5AD4F200FB6399 /* InsuranceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D2832D1D5AD4F200FB6399 /* InsuranceHolder.swift */; };
 		86D283301D5AF7A500FB6399 /* PolicyXyz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D2832F1D5AF7A500FB6399 /* PolicyXyz.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,7 @@
 		86D283271D5AD2F000FB6399 /* PolicyPremium.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyPremium.swift; sourceTree = "<group>"; };
 		86D283291D5AD35700FB6399 /* PolicyJeevanAnand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyJeevanAnand.swift; sourceTree = "<group>"; };
 		86D2832B1D5AD3B000FB6399 /* PolicySimplySave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicySimplySave.swift; sourceTree = "<group>"; };
-		86D2832D1D5AD4F200FB6399 /* InsurancePolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsurancePolicy.swift; sourceTree = "<group>"; };
+		86D2832D1D5AD4F200FB6399 /* InsuranceHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsuranceHolder.swift; sourceTree = "<group>"; };
 		86D2832F1D5AF7A500FB6399 /* PolicyXyz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyXyz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,10 +78,10 @@
 		86D283261D5AD29F00FB6399 /* Strategies */ = {
 			isa = PBXGroup;
 			children = (
+				86D2832D1D5AD4F200FB6399 /* InsuranceHolder.swift */,
 				86D283271D5AD2F000FB6399 /* PolicyPremium.swift */,
 				86D283291D5AD35700FB6399 /* PolicyJeevanAnand.swift */,
 				86D2832B1D5AD3B000FB6399 /* PolicySimplySave.swift */,
-				86D2832D1D5AD4F200FB6399 /* InsurancePolicy.swift */,
 				86D2832F1D5AF7A500FB6399 /* PolicyXyz.swift */,
 			);
 			path = Strategies;
@@ -162,7 +162,7 @@
 				86D2832C1D5AD3B000FB6399 /* PolicySimplySave.swift in Sources */,
 				86D2832A1D5AD35700FB6399 /* PolicyJeevanAnand.swift in Sources */,
 				86D283281D5AD2F000FB6399 /* PolicyPremium.swift in Sources */,
-				86D2832E1D5AD4F200FB6399 /* InsurancePolicy.swift in Sources */,
+				86D2832E1D5AD4F200FB6399 /* InsuranceHolder.swift in Sources */,
 				86D283301D5AF7A500FB6399 /* PolicyXyz.swift in Sources */,
 				86D283131D5AD25000FB6399 /* AppDelegate.swift in Sources */,
 			);
@@ -314,6 +314,7 @@
 				86D283231D5AD25000FB6399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

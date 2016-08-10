@@ -12,20 +12,23 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        demonstrateStrategy()
+    }
+    
+    func demonstrateStrategy() {
         
-        let insurancePolicy = InsurancePolicy()
-        insurancePolicy.policyType = PolicyJeevanAnand()
-        let premiumOne = insurancePolicy.calculatePremiumForAmount(10000)
+        let insurancePolicyHolder = InsuranceHolder()
+        insurancePolicyHolder.policyType = PolicyJeevanAnand()
+        let premiumOne = insurancePolicyHolder.calculatePremiumForAmount(10000)
         print("JeevanAnand Policy premium is:\(premiumOne)")
         
-        insurancePolicy.policyType = PolicySimplySave()
-        let premiumTwo = insurancePolicy.calculatePremiumForAmount(10000)
+        insurancePolicyHolder.policyType = PolicySimplySave()
+        let premiumTwo = insurancePolicyHolder.calculatePremiumForAmount(10000)
         print("Simply save Policy premium is:\(premiumTwo)")
         
-        insurancePolicy.policyType = PolicyXyz()
-        let premiumThree = insurancePolicy.calculatePremiumForAmount(10000)
+        insurancePolicyHolder.policyType = PolicyXyz()
+        let premiumThree = insurancePolicyHolder.calculatePremiumForAmount(10000)
         print("Policy xyz premium is:\(premiumThree)")
-        
     }
 }
 

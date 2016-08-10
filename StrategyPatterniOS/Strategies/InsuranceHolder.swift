@@ -1,5 +1,5 @@
 //
-//  InsurancePolicy.swift
+//  InsuranceHolder.swift
 //  StrategyPatterniOS
 //
 //  Created by Avadesh Kumar on 10/08/16.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-class InsurancePolicy: NSObject {
-
+class InsuranceHolder: NSObject {
+    
     var policyType: PolicyPremium?
     var name: String?
     
@@ -20,7 +20,8 @@ class InsurancePolicy: NSObject {
             return policyType!.calculatePremiumForPolicyAmount(amount);
         }
         else {
-           // NSException.raise("Blank Policy Exception", format: "Please specify a Insurance Policy first", arguments: 0);
+            
+            NSException(name: "Blank Policy Exception", reason: "Please specify a Insurance Policy first", userInfo: [:]).raise()
             return 0;
         }
     }
