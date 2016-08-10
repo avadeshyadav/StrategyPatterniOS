@@ -6,9 +6,9 @@ Here In this demo, I have taken example of Insurance Policies.
 
 My Strategy protocol is:
 
-protocol PolicyPremium {
-    func calculatePremiumForPolicyAmount(amount: Int) -> Int
-}
+    protocol PolicyPremium {
+        func calculatePremiumForPolicyAmount(amount: Int) -> Int
+    }
 
 And suppose currently 2 policies available as:
 1. PolicyJeevanAnand
@@ -17,17 +17,17 @@ And suppose currently 2 policies available as:
 As I am not a guy with good knowledge of Insurance policies, so just made two types with random name.
 So implementations of these classes are:
 
-class PolicyJeevanAnand: NSObject, PolicyPremium {
-    func calculatePremiumForPolicyAmount(amount: Int) -> Int {
-        return amount * 8 / 1000;
+    class PolicyJeevanAnand: NSObject, PolicyPremium {
+        func calculatePremiumForPolicyAmount(amount: Int) -> Int {
+            return amount * 8 / 1000;
+        }
     }
-}
 
-class PolicySimplySave: NSObject, PolicyPremium {
-    func calculatePremiumForPolicyAmount(amount: Int) -> Int {
-        return amount * 10 / 1000;// This is just for understanding
+    class PolicySimplySave: NSObject, PolicyPremium {
+        func calculatePremiumForPolicyAmount(amount: Int) -> Int {
+            return amount * 10 / 1000;// This is just for understanding
+        }
     }
-}
 
 All these classes conform to PolicyPremium protocol, and implements method : func calculatePremiumForPolicyAmount(amount: Int) -> Int
 For better understanding I have taken only one method, it may have more than one methods also.
@@ -79,22 +79,22 @@ Let's see the code to use this behaviour, currently I have put it in ViewControl
   4. Write your own logic in this method for calculating premium and return the value.
   5. Now while using set policyType to new policy ie. PolicyXyz.
   
-  class PolicyXyz: NSObject, PolicyPremium {
-    func calculatePremiumForPolicyAmount(amount: Int) -> Int {
-        return amount * 6 / 1000;
+    class PolicyXyz: NSObject, PolicyPremium {
+        func calculatePremiumForPolicyAmount(amount: Int) -> Int {
+            return amount * 6 / 1000;
+        }
     }
-  }
   
   And In your ViewController use it like: 
   
-  insurancePolicyHolder.policyType = PolicyXyz()
-  let premiumThree = insurancePolicyHolder.calculatePremiumForAmount(10000)
-  print("Policy xyz premium is:\(premiumThree)")
+    insurancePolicyHolder.policyType = PolicyXyz()
+    let premiumThree = insurancePolicyHolder.calculatePremiumForAmount(10000)
+    print("Policy xyz premium is:\(premiumThree)")
   
-  Now your combined output will be:
-  JeevanAnand Policy premium is:80
-  Simply save Policy premium is:100
-  Policy xyz premium is:60
+    Now your combined output will be:
+    JeevanAnand Policy premium is:80
+    Simply save Policy premium is:100
+    Policy xyz premium is:60
 
   Now you have done it, without touching existing policies, PolicyHolder also. You may have notice that on run time I am just changing the policyType for the same policyHolder and it's behaviour changes dynamically, it is a great example of Polymorphism.
   
