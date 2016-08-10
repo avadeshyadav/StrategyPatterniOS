@@ -79,6 +79,9 @@ Let's see the code to use this behaviour, currently I have put it in ViewControl
   4. Write your own logic in this method for calculating premium and return the value.
   5. Now while using set policyType to new policy ie. PolicyXyz.
   
+New Code will look something like this:
+
+
     class PolicyXyz: NSObject, PolicyPremium {
         func calculatePremiumForPolicyAmount(amount: Int) -> Int {
             return amount * 6 / 1000;
@@ -86,12 +89,13 @@ Let's see the code to use this behaviour, currently I have put it in ViewControl
     }
   
   And In your ViewController use it like: 
-  
+
     insurancePolicyHolder.policyType = PolicyXyz()
     let premiumThree = insurancePolicyHolder.calculatePremiumForAmount(10000)
     print("Policy xyz premium is:\(premiumThree)")
   
     Now your combined output will be:
+
     JeevanAnand Policy premium is:80
     Simply save Policy premium is:100
     Policy xyz premium is:60
