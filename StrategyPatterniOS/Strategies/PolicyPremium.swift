@@ -8,5 +8,5 @@
 
 
 protocol PolicyPremium {
-    func calculatePremiumForPolicyAmount(amount: Int) -> Int
+    func calculatePremiumForPolicyAmount(_ amount: Int) -> Int
 }

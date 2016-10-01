@@ -10,7 +10,7 @@ import Foundation
 
 class PolicyXyz: NSObject, PolicyPremium {
 
-    func calculatePremiumForPolicyAmount(amount: Int) -> Int {
+    func calculatePremiumForPolicyAmount(_ amount: Int) -> Int {
         
         return amount * 6 / 1000;
     }

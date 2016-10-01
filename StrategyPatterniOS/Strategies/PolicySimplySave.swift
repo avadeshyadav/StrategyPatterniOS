@@ -10,7 +10,7 @@ import Foundation
 
 class PolicySimplySave: NSObject, PolicyPremium {
     
-    func calculatePremiumForPolicyAmount(amount: Int) -> Int {
+    func calculatePremiumForPolicyAmount(_ amount: Int) -> Int {
         
         return amount * 10 / 1000;// This is just for understanding
     }

@@ -14,14 +14,14 @@ class InsuranceHolder: NSObject {
     var name: String?
     
     
-    func calculatePremiumForAmount(amount: Int) -> Int {
+    func calculatePremiumForAmount(_ amount: Int) -> Int {
         
         if let _ = policyType {
             return policyType!.calculatePremiumForPolicyAmount(amount);
         }
         else {
             
-            NSException(name: "Blank Policy Exception", reason: "Please specify a Insurance Policy first", userInfo: [:]).raise()
+            NSException(name: NSExceptionName(rawValue: "Blank Policy Exception"), reason: "Please specify a Insurance Policy first", userInfo: [:]).raise()
             return 0;
         }
     }
